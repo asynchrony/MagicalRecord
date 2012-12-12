@@ -310,7 +310,7 @@
 		B4E7D6451678E1B600C01DFA /* CopyFiles */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
-			dstPath = "include/${PRODUCT_NAME}";
+			dstPath = "usr/local/include/${PRODUCT_NAME}";
 			dstSubfolderSpec = 16;
 			files = (
 				B4E7D68C1678E4CF00C01DFA /* CoreData+MagicalRecord.h in CopyFiles */,
@@ -1908,6 +1908,7 @@
 				B4E7D6511678E1B600C01DFA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		C721C7A513D0A3750097AB6F /* Build configuration list for PBXProject "Magical Record" */ = {
 			isa = XCConfigurationList;
