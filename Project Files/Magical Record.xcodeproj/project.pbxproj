@@ -1139,9 +1139,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		B4E7D6461678E1B600C01DFA /* Magical Record Framework */ = {
+		B4E7D6461678E1B600C01DFA /* MagicalRecordFramework */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = B4E7D6521678E1B600C01DFA /* Build configuration list for PBXNativeTarget "Magical Record Framework" */;
+			buildConfigurationList = B4E7D6521678E1B600C01DFA /* Build configuration list for PBXNativeTarget "MagicalRecordFramework" */;
 			buildPhases = (
 				B4E7D6431678E1B600C01DFA /* Sources */,
 				B4E7D6441678E1B600C01DFA /* Frameworks */,
@@ -1151,7 +1151,7 @@
 			);
 			dependencies = (
 			);
-			name = "Magical Record Framework";
+			name = MagicalRecordFramework;
 			productName = "Magical Record Framework";
 			productReference = B4E7D6471678E1B600C01DFA /* libMagical Record Framework.a */;
 			productType = "com.apple.product-type.library.static";
@@ -1221,7 +1221,7 @@
 			targets = (
 				C721C7DB13D0C3A00097AB6F /* Mac App Unit Tests */,
 				C721C7FC13D0C3CD0097AB6F /* iOS App Unit Tests */,
-				B4E7D6461678E1B600C01DFA /* Magical Record Framework */,
+				B4E7D6461678E1B600C01DFA /* MagicalRecordFramework */,
 			);
 		};
 /* End PBXProject section */
@@ -1608,7 +1608,9 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
 				ONLY_ACTIVE_ARCH = NO;
 				OTHER_LDFLAGS = "-ObjC";
+				PRIVATE_HEADERS_FOLDER_PATH = /usr/local/include/MagicalRecord;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PUBLIC_HEADERS_FOLDER_PATH = /usr/local/include/MagicalRecord;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -1635,7 +1637,9 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
 				ONLY_ACTIVE_ARCH = NO;
 				OTHER_LDFLAGS = "-ObjC";
+				PRIVATE_HEADERS_FOLDER_PATH = /usr/local/include/MagicalRecord;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PUBLIC_HEADERS_FOLDER_PATH = /usr/local/include/MagicalRecord;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -1902,7 +1906,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		B4E7D6521678E1B600C01DFA /* Build configuration list for PBXNativeTarget "Magical Record Framework" */ = {
+		B4E7D6521678E1B600C01DFA /* Build configuration list for PBXNativeTarget "MagicalRecordFramework" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				B4E7D6501678E1B600C01DFA /* Debug */,
