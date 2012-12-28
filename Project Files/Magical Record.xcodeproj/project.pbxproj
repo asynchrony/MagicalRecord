@@ -508,7 +508,7 @@
 		B453FFF0168E0B860035EC54 /* MagicalRecord-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "MagicalRecord-Info.plist"; sourceTree = "<group>"; };
 		B453FFF2168E0B860035EC54 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		B453FFF4168E0B860035EC54 /* MagicalRecord-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "MagicalRecord-Prefix.pch"; sourceTree = "<group>"; };
-		B4E7D6471678E1B600C01DFA /* libMagical Record Framework.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = "libMagical Record Framework.a"; path = libMagicalRecordFramework.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		B4E7D6471678E1B600C01DFA /* libMagicalRecord.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libMagicalRecord.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		B4E7D64B1678E1B600C01DFA /* Magical Record Framework-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Magical Record Framework-Prefix.pch"; sourceTree = "<group>"; };
 		B4E7D64C1678E1B600C01DFA /* Magical_Record_Framework.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Magical_Record_Framework.h; sourceTree = "<group>"; };
 		B4E7D64E1678E1B600C01DFA /* Magical_Record_Framework.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Magical_Record_Framework.m; sourceTree = "<group>"; };
@@ -858,7 +858,7 @@
 			children = (
 				C721C7DC13D0C3A00097AB6F /* Mac App Unit Tests.app */,
 				C721C7FD13D0C3CD0097AB6F /* iOS App Unit Tests.app */,
-				B4E7D6471678E1B600C01DFA /* libMagical Record Framework.a */,
+				B4E7D6471678E1B600C01DFA /* libMagicalRecord.a */,
 				B453FFEC168E0B860035EC54 /* MagicalRecord.framework */,
 			);
 			name = Products;
@@ -1286,9 +1286,9 @@
 			productReference = B453FFEC168E0B860035EC54 /* MagicalRecord.framework */;
 			productType = "com.apple.product-type.framework.static";
 		};
-		B4E7D6461678E1B600C01DFA /* MagicalRecordFramework */ = {
+		B4E7D6461678E1B600C01DFA /* MagicalRecordLib */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = B4E7D6521678E1B600C01DFA /* Build configuration list for PBXNativeTarget "MagicalRecordFramework" */;
+			buildConfigurationList = B4E7D6521678E1B600C01DFA /* Build configuration list for PBXNativeTarget "MagicalRecordLib" */;
 			buildPhases = (
 				B4E7D6431678E1B600C01DFA /* Sources */,
 				B4E7D6441678E1B600C01DFA /* Frameworks */,
@@ -1298,9 +1298,9 @@
 			);
 			dependencies = (
 			);
-			name = MagicalRecordFramework;
+			name = MagicalRecordLib;
 			productName = "Magical Record Framework";
-			productReference = B4E7D6471678E1B600C01DFA /* libMagical Record Framework.a */;
+			productReference = B4E7D6471678E1B600C01DFA /* libMagicalRecord.a */;
 			productType = "com.apple.product-type.library.static";
 		};
 		C721C7DB13D0C3A00097AB6F /* Mac App Unit Tests */ = {
@@ -1368,7 +1368,7 @@
 			targets = (
 				C721C7DB13D0C3A00097AB6F /* Mac App Unit Tests */,
 				C721C7FC13D0C3CD0097AB6F /* iOS App Unit Tests */,
-				B4E7D6461678E1B600C01DFA /* MagicalRecordFramework */,
+				B4E7D6461678E1B600C01DFA /* MagicalRecordLib */,
 				B453FFEB168E0B860035EC54 /* MagicalRecord */,
 			);
 		};
@@ -1904,9 +1904,9 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
 				ONLY_ACTIVE_ARCH = NO;
 				OTHER_LDFLAGS = "-ObjC";
-				PRIVATE_HEADERS_FOLDER_PATH = /usr/local/include/MagicalRecord;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				PUBLIC_HEADERS_FOLDER_PATH = /usr/local/include/MagicalRecord;
+				PRIVATE_HEADERS_FOLDER_PATH = /usr/local/include;
+				PRODUCT_NAME = MagicalRecord;
+				PUBLIC_HEADERS_FOLDER_PATH = /usr/local/include;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -1933,9 +1933,9 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
 				ONLY_ACTIVE_ARCH = NO;
 				OTHER_LDFLAGS = "-ObjC";
-				PRIVATE_HEADERS_FOLDER_PATH = /usr/local/include/MagicalRecord;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				PUBLIC_HEADERS_FOLDER_PATH = /usr/local/include/MagicalRecord;
+				PRIVATE_HEADERS_FOLDER_PATH = /usr/local/include;
+				PRODUCT_NAME = MagicalRecord;
+				PUBLIC_HEADERS_FOLDER_PATH = /usr/local/include;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -2209,8 +2209,9 @@
 				B453FFF6168E0B860035EC54 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
-		B4E7D6521678E1B600C01DFA /* Build configuration list for PBXNativeTarget "MagicalRecordFramework" */ = {
+		B4E7D6521678E1B600C01DFA /* Build configuration list for PBXNativeTarget "MagicalRecordLib" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				B4E7D6501678E1B600C01DFA /* Debug */,
